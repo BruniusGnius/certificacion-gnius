@@ -1,0 +1,441 @@
+[
+  {
+    "projectTitle": "Alarma Solar para Plantas Sedientas",
+    "slug": "alarma-solar-para-plantas-sedientas",
+    "projectCategory": "IoT",
+    "studentLevel": "Secundaria",
+    "projectDate": "2024-10-15",
+    "intro_title": "¡No más plantas marchitas!",
+    "intro_content": "Desarrollamos un sistema autónomo que te avisa cuando tus plantas necesitan agua, usando energía solar y sensores de humedad. El objetivo es asegurar el cuidado óptimo de las plantas con mínima intervención humana, promoviendo la sostenibilidad y evitando el desperdicio de agua.",
+    "coverUrl": {
+      "url": "https://picsum.photos/seed/plantaFelizCover/640/360",
+      "altText": "Prototipo de alarma de riego solar junto a una planta verde"
+    },
+    "problemDescription": "A menudo olvidamos regar nuestras plantas, especialmente cuando estamos ocupados o de viaje. Esto puede llevar a que se sequen y mueran, desperdiciando recursos y esfuerzo. La falta de un sistema simple y autónomo de alerta contribuye a este problema.",
+    "solutionProposed": "Un dispositivo compacto con un sensor de humedad del suelo capacitivo conectado a un microcontrolador (Arduino Nano). Cuando la humedad baja de un umbral predefinido, activa una alarma visual (LED parpadeante) y sonora (buzzer intermitente). Todo el sistema está alimentado por un pequeño panel solar y una batería recargable, asegurando su autonomía.",
+    "innovationProcess": "<div><p>1. <strong>Investigación:</strong> Analizamos sensores de humedad (capacitivos vs resistivos), microcontroladores de bajo consumo (Arduino Nano vs ESP32) y eficiencia de paneles solares pequeños.</p><p>2. <strong>Diseño:</strong> Esbozamos el circuito electrónico detallado, incluyendo el panel solar, el módulo de carga TP4056, la batería LiPo, el Arduino Nano, el sensor capacitivo v1.2 y los actuadores (LED, buzzer). Diseñamos una carcasa modular en TinkerCAD.</p><p>3. <strong>Prototipado:</strong> Montamos el circuito inicial en protoboard. Desarrollamos el código en Arduino IDE para leer el sensor analógico, calibrar umbrales y activar la alarma con patrones específicos.</p><p>4. <strong>Pruebas:</strong> Calibramos el sensor en diferentes tipos de tierra (arcillosa, arenosa, mezcla comercial) y ajustamos los umbrales de activación de la alarma. Medimos el consumo energético.</p><p>5. <strong>Ensamblaje:</strong> Imprimimos la carcasa en 3D con PETG. Soldamos los componentes en una placa PCB perforada para mayor robustez.</p><p>6. <strong>Iteración:</strong> Implementamos modos de bajo consumo (sleep mode del Arduino) activados por tiempo para prolongar significativamente la vida de la batería entre cargas solares.</p></div>",
+    "media": {
+      "type": "image",
+      "url": "https://picsum.photos/seed/plantaDiagrama/800/450",
+      "altText": "Diagrama del circuito eléctrico detallado del prototipo V2"
+    },
+    "teamMembers": [
+      {
+        "name": "Elena Ríos",
+        "role": "Hardware Lead & Programmer",
+        "sbtLink": "https://credentials.ejemplo.com/sbt/elena-rios-123",
+        "certificate_courseName": "Introducción a IoT con Arduino",
+        "certificate_badgeName": "IoT MAKER",
+        "certificate_level": "INTERMEDIO",
+        "certificate_skills": "Arduino;Sensores;Energía Solar;Programación C++;Soldadura;Gestión Energía",
+        "certificate_criteria": "Funcionalidad;Diseño Circuito;Código Eficiente;Presentación;Autonomía",
+        "certificate_college": "Colegio Tesla",
+        "certificate_issueDate": "2024-10-20"
+      },
+      {
+        "name": "Carlos Vega",
+        "role": "Diseñador 3D & Ensamblador",
+        "sbtLink": null,
+        "certificate_courseName": "Introducción a IoT con Arduino",
+        "certificate_badgeName": "IoT MAKER",
+        "certificate_level": "INTERMEDIO",
+        "certificate_skills": "Diseño 3D (TinkerCAD);Impresión 3D (PETG);Ensamblaje Electrónico;Resolución Problemas Mecánicos",
+        "certificate_criteria": "Diseño Carcasa Funcional;Calidad Ensamblaje;Colaboración;Presentación",
+        "certificate_college": "Colegio Tesla",
+        "certificate_issueDate": "2024-10-20"
+      }
+    ],
+    "technologies": [
+      { "name": "Arduino Nano", "icon": "microchip", "category": "Hardware" },
+      {
+        "name": "Sensor Humedad Capacitivo v1.2",
+        "icon": "water",
+        "category": "Hardware"
+      },
+      {
+        "name": "Panel Solar 5V 1W",
+        "icon": "solar-panel",
+        "category": "Hardware"
+      },
+      {
+        "name": "Batería LiPo 3.7V",
+        "icon": "battery-half",
+        "category": "Hardware"
+      },
+      { "name": "Arduino IDE (C++)", "icon": "code", "category": "Software" },
+      { "name": "TinkerCAD", "icon": "cube", "category": "Tool" }
+    ],
+    "additionalResources": [
+      {
+        "title": "Código Fuente (GitHub)",
+        "url": "https://github.com/gnius-club/ejemplo-alarma-plantas",
+        "type": "github"
+      },
+      { "title": "Esquema del Circuito V2 (PDF)", "url": "#", "type": "pdf" },
+      { "title": "Archivos STL Carcasa", "url": "#", "type": "file" }
+    ],
+    "imageGallery": [
+      {
+        "url": "https://picsum.photos/seed/plantaGal1/800/450",
+        "altText": "Primera versión del prototipo en protoboard",
+        "caption": "Prototipo Inicial en Protoboard"
+      },
+      {
+        "url": "https://picsum.photos/seed/plantaGal2/800/450",
+        "altText": "Detalle del sensor de humedad capacitivo v1.2",
+        "caption": "Sensor Capacitivo v1.2"
+      },
+      {
+        "url": "https://picsum.photos/seed/plantaGal3/800/450",
+        "altText": "Carcasa final diseñada e impresa en 3D",
+        "caption": "Carcasa Final Ensamblada"
+      },
+      {
+        "url": "https://picsum.photos/seed/plantaGal4/800/450",
+        "altText": "Detalle del panel solar y conexión",
+        "caption": "Integración Panel Solar"
+      }
+    ],
+    "evaluationScores": {
+      "eval_Impacto Potencial": 65,
+      "eval_Creatividad Solucion": 95,
+      "eval_Innovacion Tecnica": 70,
+      "eval_Ejecucion Tecnica": 80,
+      "eval_Colaboracion Equipo": 90,
+      "eval_Sostenibilidad Diseño": 75
+    }
+  },
+  {
+    "projectTitle": "Generador de Arte Abstracto con IA",
+    "slug": "generador-de-arte-abstracto-con-ia",
+    "projectCategory": "Inteligencia Artificial",
+    "studentLevel": "Preparatoria",
+    "projectDate": "2024-11-05",
+    "intro_title": "Creando arte único con código",
+    "intro_content": "Exploramos algoritmos de IA generativa (inspirados en GANs y Perlin Noise) para crear patrones visuales abstractos y estéticamente interesantes directamente en el navegador, haciendo la IA accesible y divertida para experimentar.",
+    "coverUrl": {
+      "url": "https://picsum.photos/seed/arteIACover/640/360",
+      "altText": "Muestra de arte abstracto generado por IA con colores vibrantes y formas fluidas"
+    },
+    "problemDescription": "El arte generativo mediante IA puede ser intimidante, requiriendo a menudo complejas configuraciones de software, hardware potente (GPUs) y conocimientos profundos de redes neuronales. Queríamos crear una herramienta web sencilla y educativa.",
+    "solutionProposed": "Una aplicación web interactiva construida con HTML, CSS y JavaScript Vanilla, utilizando la librería p5.js para el dibujo en canvas y algoritmos generativos basados en Perlin Noise y reglas simples inspiradas en autómatas celulares. El usuario puede ajustar parámetros como paleta de colores, complejidad de ruido, y velocidad de generación para crear imágenes únicas.",
+    "innovationProcess": "Se investigaron librerías JS para gráficos (p5.js, Two.js) y técnicas de generación procedural (Perlin Noise, L-Systems, GANs simplificadas). Se optó por p5.js y Perlin Noise por su accesibilidad y buen rendimiento en navegador. Se diseñó una interfaz simple para controlar los parámetros clave.",
+    "media": {
+      "type": "video",
+      "url": "https://www.youtube.com/embed/uHzn4cF4k18",
+      "altText": "Demostración interactiva del Generador de Arte Abstracto"
+    },
+    "teamMembers": [
+      {
+        "name": "Sofia Chen",
+        "role": "Lead Developer (IA & Frontend)",
+        "sbtLink": "https://credentials.ejemplo.com/sbt/sofia-chen-456",
+        "certificate_courseName": "Fundamentos de IA y Arte Generativo",
+        "certificate_badgeName": "AI ARTIST",
+        "certificate_level": "AVANZADO",
+        "certificate_skills": "JavaScript (ES6+);p5.js;HTML/CSS;Algoritmos Generativos (Perlin Noise);UI/UX Interactivo;Optimización Web",
+        "certificate_criteria": "Originalidad Conceptual;Complejidad Técnica Implementada;Calidad Estética Visual;Usabilidad Interfaz;Rendimiento Navegador",
+        "certificate_college": "Instituto Da Vinci",
+        "certificate_issueDate": "2024-11-10"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "JavaScript (ES6+)",
+        "icon": "fa-brands fa-js",
+        "category": "Software"
+      },
+      { "name": "p5.js", "icon": "palette", "category": "Software" },
+      { "name": "HTML5", "icon": "fa-brands fa-html5", "category": "Software" },
+      {
+        "name": "CSS3 (Tailwind)",
+        "icon": "fa-brands fa-css3-alt",
+        "category": "Software"
+      },
+      { "name": "Perlin Noise", "icon": "wave-square", "category": "Software" },
+      {
+        "name": "GitHub Pages",
+        "icon": "fa-brands fa-github",
+        "category": "Tool"
+      }
+    ],
+    "additionalResources": [
+      { "title": "Demo Online Interactivo", "url": "#", "type": "website" },
+      {
+        "title": "Artículo Explicando Perlin Noise",
+        "url": "#",
+        "type": "link"
+      }
+    ],
+    "imageGallery": [
+      {
+        "url": "https://picsum.photos/seed/arteIAGal1/800/450",
+        "altText": "Selector de paleta de colores en la interfaz",
+        "caption": "Interfaz: Paletas de Colores"
+      },
+      {
+        "url": "https://picsum.photos/seed/arteIAGal2/800/450",
+        "altText": "Ejemplo de arte abstracto generado con tonos verdes",
+        "caption": "Generación 1 (Tonos Verdes)"
+      },
+      {
+        "url": "https://picsum.photos/seed/arteIAGal3/800/450",
+        "altText": "Ejemplo de arte abstracto generado con tonos naranjas",
+        "caption": "Generación 2 (Tonos Naranjas)"
+      }
+    ],
+    "evaluationScores": {
+      "eval_Impacto Potencial": 70,
+      "eval_Creatividad Solucion": 80,
+      "eval_Innovacion Tecnica": 92,
+      "eval_Ejecucion Tecnica": 75,
+      "eval_Colaboracion Equipo": 100,
+      "eval_Sostenibilidad Diseño": 60
+    }
+  },
+  {
+    "projectTitle": "Robot Explorador Autónomo (REA)",
+    "slug": "robot-explorador-autonomo-rea",
+    "projectCategory": "Robótica",
+    "studentLevel": "Secundaria",
+    "projectDate": "2023-05-20",
+    "intro_title": "Navegando lo desconocido",
+    "intro_content": "Construimos y programamos un robot móvil basado en Arduino capaz de navegar un entorno simple de forma autónoma, utilizando sensores ultrasónicos para detectar y esquivar obstáculos eficazmente y explorar su alrededor.",
+    "coverUrl": {
+      "url": "https://picsum.photos/seed/robotREACover/640/360",
+      "altText": "Robot explorador REA con chasis de 4 ruedas y sensor ultrasónico frontal sobre fondo neutro"
+    },
+    "problemDescription": "Diseñar robots que puedan moverse de forma independiente en entornos desconocidos o cambiantes es un desafío fundamental en robótica. El objetivo era aprender los principios básicos de la percepción sensorial (ultrasonido) y la toma de decisiones simple para la navegación autónoma.",
+    "solutionProposed": "Un robot construido sobre un chasis estándar de 4 ruedas motrices, controlado por una placa Arduino Uno. Un sensor ultrasónico HC-SR04, montado en un micro servo motor SG90, permite al robot 'mirar' hacia adelante, izquierda y derecha. El algoritmo implementado detiene el robot si detecta un obstáculo cercano al frente, escanea los lados buscando una ruta libre (la más despejada), gira el robot en esa dirección y luego continúa avanzando.",
+    "innovationProcess": "<p>Se siguió un proceso iterativo claro:</p><ol><li><strong>Montaje Físico:</strong> Ensamblaje del chasis, motores DC, ruedas, placa Arduino, driver de motor L298N y cableado inicial.</li><li><strong>Control Básico:</strong> Programación en Arduino IDE para controlar la dirección y velocidad de los motores (adelante, atrás, giro).</li><li><strong>Integración Sensorial:</strong> Conexión del sensor HC-SR04 y programación para medir distancias en centímetros.</li><li><strong>Movimiento del Sensor:</strong> Integración del servo motor para permitir que el sensor ultrasónico gire a ángulos específicos (-90°, 0°, +90°).</li><li><strong>Algoritmo de Evasión:</strong> Desarrollo de la lógica principal: avanzar, si obstáculo -> detener, escanear lados, elegir mejor ruta, girar, continuar.</li><li><strong>Calibración y Pruebas:</strong> Ajuste fino de parámetros como la distancia umbral de detección, la velocidad de movimiento, los ángulos y tiempos de giro para optimizar la navegación en un circuito de prueba con obstáculos simples.</li></ol>",
+    "media": {
+      "type": "video",
+      "url": "https://www.youtube.com/embed/Rczjdy34GgI",
+      "altText": "Video demostrativo del Robot REA navegando y evitando obstáculos"
+    },
+    "teamMembers": [
+      {
+        "name": "Javier Morales",
+        "role": "Programador Principal",
+        "sbtLink": null,
+        "certificate_courseName": "Robótica Móvil con Arduino",
+        "certificate_badgeName": "ROBOT NAVIGATOR",
+        "certificate_level": "INTERMEDIO",
+        "certificate_skills": "Arduino (C++);Sensores Ultrasónicos;Servomotores;Control Motores DC;Algoritmos Navegación Simple;Lógica Programación",
+        "certificate_criteria": "Funcionalidad General Robot;Calidad y Eficiencia Código;Precisión Evasión Obstáculos;Colaboración Técnica",
+        "certificate_college": "Escuela Politécnica Juvenil",
+        "certificate_issueDate": "2023-05-25"
+      },
+      {
+        "name": "Lucía Fernández",
+        "role": "Ensamblaje y Pruebas",
+        "sbtLink": "https://credentials.ejemplo.com/sbt/lucia-fdez-789",
+        "certificate_courseName": "Robótica Móvil con Arduino",
+        "certificate_badgeName": "ROBOT BUILDER",
+        "certificate_level": "INTERMEDIO",
+        "certificate_skills": "Ensamblaje Mecánico Preciso;Cableado Estructurado;Electrónica Básica (Conexiones);Metodología Pruebas Sistemática;Identificación Fallos Hardware",
+        "certificate_criteria": "Calidad Construcción Física;Organización y Seguridad Cableado;Identificación y Resolución Fallos;Colaboración y Comunicación",
+        "certificate_college": "Escuela Politécnica Juvenil",
+        "certificate_issueDate": "2023-05-25"
+      }
+    ],
+    "technologies": [
+      { "name": "Arduino Uno R3", "icon": "microchip", "category": "Hardware" },
+      {
+        "name": "Sensor HC-SR04",
+        "icon": "ruler-combined",
+        "category": "Hardware"
+      },
+      { "name": "Servo Motor SG90", "icon": "gear", "category": "Hardware" },
+      { "name": "Driver Motor L298N", "icon": "cogs", "category": "Hardware" },
+      { "name": "Chasis Robot 4WD", "icon": "robot", "category": "Hardware" },
+      { "name": "C++ (Arduino)", "icon": "code", "category": "Software" }
+    ],
+    "additionalResources": [
+      {
+        "title": "Diagrama de Conexiones Fritzing",
+        "url": "https://picsum.photos/seed/robotREAFritzing/600/400",
+        "type": "image"
+      }
+    ],
+    "imageGallery": [
+      {
+        "url": "https://picsum.photos/seed/robotREAGal1/800/450",
+        "altText": "Chasis del robot con motores montados antes del cableado",
+        "caption": "Chasis y Motores Iniciales"
+      },
+      {
+        "url": "https://picsum.photos/seed/robotREAGal2/800/450",
+        "altText": "Detalle del sensor ultrasónico HC-SR04 montado en el servo motor SG90",
+        "caption": "Montaje Sensor Ultrasónico Giratorio"
+      },
+      {
+        "url": "https://picsum.photos/seed/robotREAGal3/800/450",
+        "altText": "Vista superior del robot con todo el cableado organizado y componentes conectados",
+        "caption": "Cableado Completo y Organizado"
+      }
+    ],
+    "evaluationScores": {
+      "eval_Impacto Potencial": 88,
+      "eval_Creatividad Solucion": 70,
+      "eval_Innovacion Tecnica": 75,
+      "eval_Ejecucion Tecnica": 95,
+      "eval_Colaboracion Equipo": 85,
+      "eval_Sostenibilidad Diseño": 65
+    }
+  },
+  {
+    "projectTitle": "Plataforma Educativa sobre Ciberseguridad",
+    "slug": "plataforma-educativa-sobre-ciberseguridad",
+    "projectCategory": "Desarrollo Web",
+    "studentLevel": "Preparatoria",
+    "projectDate": "2024-01-30",
+    "intro_title": "Aprendiendo a protegernos en línea",
+    "intro_content": "Creamos un sitio web estático e interactivo con módulos educativos esenciales sobre ciberseguridad para adolescentes: chequeo de contraseñas, reconocimiento de phishing y configuración de privacidad en redes sociales.",
+    "coverUrl": {
+      "url": "https://picsum.photos/seed/cyberSecCover/640/360",
+      "altText": "Pantalla principal de la plataforma educativa de ciberseguridad con iconos representativos"
+    },
+    "problemDescription": "Muchos jóvenes navegan en internet sin ser plenamente conscientes de los riesgos básicos de seguridad. La información disponible a menudo es demasiado técnica, dispersa o poco atractiva para este público, creando una brecha de conocimiento peligrosa.",
+    "solutionProposed": "Un sitio web estático desarrollado con HTML, CSS (utilizando Tailwind CSS para un diseño rápido y responsivo) y JavaScript Vanilla para la interactividad. Incluye tres módulos clave: 1) Un generador/evaluador de fortaleza de contraseñas. 2) Un simulador interactivo de correos electrónicos de phishing para identificar señales de alerta comunes. 3) Una guía con consejos prácticos y visuales sobre configuración de privacidad en redes sociales populares.",
+    "innovationProcess": "El proceso incluyó investigación de temas de ciberseguridad relevantes para adolescentes, diseño de wireframes y mockups de la interfaz, desarrollo frontend con Tailwind CSS, programación de la lógica interactiva en JS (validación de contraseñas, simulación de phishing), y creación de contenido claro y conciso.",
+    "media": {
+      "type": "image",
+      "url": "https://picsum.photos/seed/cyberSecMedia/800/450",
+      "altText": "Captura de pantalla del módulo interactivo que simula un intento de phishing con señales resaltadas"
+    },
+    "teamMembers": [
+      {
+        "name": "David Kim",
+        "role": "Desarrollador Frontend & UI",
+        "sbtLink": null,
+        "certificate_courseName": "Desarrollo Web Seguro",
+        "certificate_badgeName": "WEB GUARDIAN",
+        "certificate_level": "FUNDAMENTAL",
+        "certificate_skills": "HTML5;CSS3;JavaScript Vanilla;Tailwind CSS;Diseño Responsivo;Conceptos Ciberseguridad Básica",
+        "certificate_criteria": "Calidad Diseño UI/UX;Nivel Interactividad;Claridad Presentación Contenido;Código Limpio y Organizado",
+        "certificate_college": "Academia Digital Segura",
+        "certificate_issueDate": "2024-02-05"
+      },
+      {
+        "name": "Laura Nuñez",
+        "role": "Investigadora & Creadora de Contenido",
+        "sbtLink": null,
+        "certificate_courseName": "Desarrollo Web Seguro",
+        "certificate_badgeName": "CONTENT DEFENDER",
+        "certificate_level": "FUNDAMENTAL",
+        "certificate_skills": "Investigación Ciberseguridad;Redacción Técnica Clara;Comunicación Efectiva;Síntesis Información Compleja",
+        "certificate_criteria": "Precisión y Actualidad Información;Claridad y Comprensibilidad Explicaciones;Relevancia Contenido para Audiencia;Colaboración Interdisciplinaria",
+        "certificate_college": "Academia Digital Segura",
+        "certificate_issueDate": "2024-02-05"
+      }
+    ],
+    "technologies": [
+      { "name": "HTML5", "icon": "fa-brands fa-html5", "category": "Software" },
+      {
+        "name": "Tailwind CSS",
+        "icon": "fa-brands fa-css3-alt",
+        "category": "Tool"
+      },
+      {
+        "name": "JavaScript Vanilla",
+        "icon": "fa-brands fa-js",
+        "category": "Software"
+      },
+      { "name": "Font Awesome", "icon": "flag", "category": "Tool" },
+      { "name": "GitHub", "icon": "fa-brands fa-github", "category": "Tool" }
+    ],
+    "additionalResources": [
+      { "title": "Sitio Web del Proyecto", "url": "#", "type": "website" },
+      {
+        "title": "Repositorio GitHub",
+        "url": "https://github.com/gnius-club/ejemplo-cybersec-edu",
+        "type": "github"
+      }
+    ],
+    "imageGallery": [],
+    "evaluationScores": {
+      "eval_Impacto Potencial": 80,
+      "eval_Creatividad Solucion": 70,
+      "eval_Innovacion Tecnica": 60,
+      "eval_Ejecucion Tecnica": 75,
+      "eval_Colaboracion Equipo": 98,
+      "eval_Sostenibilidad Diseño": 85
+    }
+  },
+  {
+    "projectTitle": "Monitor de Calidad del Aire DIY",
+    "slug": "monitor-de-calidad-del-aire-diy",
+    "projectCategory": "Medio Ambiente",
+    "studentLevel": "Primaria Alta",
+    "projectDate": "2024-09-01",
+    "intro_title": "Respirando ciencia ciudadana",
+    "intro_content": "Construimos un dispositivo simple y económico para medir partículas finas (PM2.5) en el aire utilizando un sensor PMS5003 y mostrando los resultados en tiempo real en una pantalla LCD. Fomentamos la conciencia ambiental local.",
+    "coverUrl": {
+      "url": "https://picsum.photos/seed/aireCover/640/360",
+      "altText": "Monitor de calidad del aire DIY mostrando una lectura de PM2.5 en pantalla LCD clara"
+    },
+    "problemDescription": "La contaminación del aire por partículas finas (PM2.5) es un riesgo para la salud, pero los equipos de monitoreo profesionales son costosos y no siempre accesibles. Esto limita la conciencia ciudadana sobre la calidad del aire local.",
+    "solutionProposed": "Un monitor DIY (Hazlo Tú Mismo) utilizando un microcontrolador ESP32 (seleccionado por su conectividad futura, aunque no usada en esta fase), un sensor de partículas láser Plantower PMS5003, y una pantalla LCD I2C estándar (16x2). El ESP32, programado en MicroPython, lee los datos del sensor a través de comunicación UART y muestra las concentraciones de PM1.0, PM2.5 y PM10 µg/m³ en la pantalla.",
+    "innovationProcess": "Se investigaron diferentes sensores de PM2.5 de bajo costo (PMS5003, SDS011), eligiendo el PMS5003 por su interfaz UART simple. Se seleccionó MicroPython por su facilidad de aprendizaje para principiantes. El proceso implicó conectar los componentes, encontrar/adaptar librerías MicroPython para el sensor y la pantalla, y programar la lectura y visualización de datos.",
+    "media": null,
+    "teamMembers": [
+      {
+        "name": "Ana Sofía Paz",
+        "role": "Programadora y Ensambladora",
+        "sbtLink": null,
+        "certificate_courseName": "Ciencia Ciudadana con Sensores",
+        "certificate_badgeName": "AIR QUALITY EXPLORER",
+        "certificate_level": "INICIAL",
+        "certificate_skills": "MicroPython (Básico);ESP32;Sensores Ambientales (PMS5003);Pantallas LCD I2C;Conexiones Electrónicas;Lectura UART",
+        "certificate_criteria": "Funcionalidad Correcta del Monitor;Precisión Lectura Sensor (Validación Cruzada Simple);Claridad Visualización Datos;Presentación del Proyecto",
+        "certificate_college": "Club de Ciencias Faraday",
+        "certificate_issueDate": "2024-09-05"
+      }
+    ],
+    "technologies": [
+      { "name": "ESP32 DevKitC", "icon": "microchip", "category": "Hardware" },
+      { "name": "Sensor PMS5003", "icon": "smog", "category": "Hardware" },
+      {
+        "name": "Pantalla LCD 16x2 I2C",
+        "icon": "desktop",
+        "category": "Hardware"
+      },
+      {
+        "name": "MicroPython",
+        "icon": "fa-brands fa-python",
+        "category": "Software"
+      },
+      { "name": "Thonny IDE", "icon": "laptop-code", "category": "Tool" }
+    ],
+    "additionalResources": [
+      { "title": "Tutorial de Conexión (Similar)", "url": "#", "type": "link" },
+      { "title": "Librería MicroPython PMS5003", "url": "#", "type": "github" }
+    ],
+    "imageGallery": [
+      {
+        "url": "https://picsum.photos/seed/aireGal1/800/450",
+        "altText": "Detalle del sensor de partículas láser PMS5003",
+        "caption": "Sensor de Partículas PMS5003"
+      },
+      {
+        "url": "https://picsum.photos/seed/aireGal2/800/450",
+        "altText": "Pantalla LCD 16x2 mostrando lecturas de PM1.0, PM2.5 y PM10",
+        "caption": "Visualización de Datos en LCD"
+      },
+      {
+        "url": "https://picsum.photos/seed/aireGal3/800/450",
+        "altText": "Conexiones entre el ESP32, el sensor y la pantalla LCD en protoboard",
+        "caption": "Detalle Conexiones Eléctricas"
+      }
+    ],
+    "evaluationScores": {
+      "eval_Impacto Potencial": 75,
+      "eval_Creatividad Solucion": 65,
+      "eval_Innovacion Tecnica": 70,
+      "eval_Ejecucion Tecnica": 75,
+      "eval_Colaboracion Equipo": 90,
+      "eval_Sostenibilidad Diseño": 95
+    }
+  }
+]
